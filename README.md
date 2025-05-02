@@ -1,1 +1,2 @@
-# SshRemoteRepository
+Welcome to the DSA Master Repository!
+This repository is dedicated to mastering the fundamentals and advanced topics of Data Structures and Algorithms through well-organized problem-solving, explanations, and code implementations.
