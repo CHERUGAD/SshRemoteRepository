@@ -8,4 +8,4 @@ for i in range(n-1):
             min_value = my_array.pop(min_index)
             my_array.insert(i, min_value)
 
-print("Using Quick sort ",my_array)
+print("Using Selection sort  ",my_array)
