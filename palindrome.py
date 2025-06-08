@@ -1,43 +1,15 @@
-pali = "racecar"
-pali = pali.lower()
-res = ''
-for i in range(len(pali))  :
-    res = pali[i] + res
-print(res) 
-if res == pali:
-    print("Palindrome")
-else:   
-    print("Not a palindrome")
+def if_palindrome(s):
+    s = ''.join(char.lower() for char in s if char.isalnum())
+    cleaned = ''.join(char.lower() for char in s if char.isalnum())
+    return cleaned == cleaned[:: -1]
+s = "A man, a plan, a canal: Panama"
+print(if_palindrome(s))
 
 
-pali = "noon"
-if pali == pali[::-1]:
-    print("Palindrome")
-else:
-    print("Not a palindrome")
 
+n = 121
+s = str(n)
+is_palindrome = s == s[::-1] 
+print(is_palindrome)
 
-# Using the reversed() function
-pali = "level"
-pali = pali.lower()
-if pali == ''.join(reversed(pali)):   #reversed() returns an iterator, so we need to join it to convert it to a string and ' '. will join the characters
-    print("Palindrome")
-else:   
-    print("Not a palindrome")
-
-
-pali = "nayana"
-left = 0
-right = len(pali) - 1   # fixed variable name
-is_palindrome = True
-while left < right:
-    if pali[left] != pali[right]:  # fixed variable name
-        is_palindrome = False
-        break
-    left += 1
-    right -= 1
-
-if is_palindrome:
-    print("Palindrome")
-else:
-    print("Not a palindrome")
+  
